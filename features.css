@@ -1,0 +1,281 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url(https://i.gifer.com/STOK.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.outer-box-1 {
+  width: 100%;
+  height: 25%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  order: 1;
+}
+
+.logo {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo .box-1 {
+  background-color: rgb(0, 255, 200);
+  width: 50%;
+  height: 80%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 10px;
+  border: 3px solid white;
+  border-radius: 10px;
+}
+
+.logo .box-1 img {
+  position: absolute;
+  z-index: 0;
+  width: 80%;
+  height: 300px;
+  top: 20px;
+}
+
+.logo .box-1 h1 {
+  z-index: 1;
+  font-size: 17px;
+  margin-left: 80px;
+  font-weight: bold;
+  text-shadow: rgb(0, 255, 242) 1px 0 10px;
+
+  color: rgb(255, 251, 0);
+}
+
+.logo .box-1 h2 {
+  z-index: 1;
+  font-size: 27px;
+  margin-left: 80px;
+  top: 40px;
+  left: 0px;
+}
+
+.outer-box-1 .box-1 {
+  width: 50%;
+  background-image: url(img/fe-1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 95%;
+  margin: 10px;
+  display: flex;
+  align-items: flex-end;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.outer-box-1 .box-2 {
+  width: 50%;
+  background-image: url(img/fe-2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 95%;
+  margin: 10px;
+  display: flex;
+  align-items: flex-end;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.outer-box-2 {
+  width: 100%;
+  height: 25%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  order: 2;
+}
+
+.outer-box-2 .box-1 {
+  width: 50%;
+  background-image: url(img/fe-3.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 95%;
+  margin: 10px;
+  display: flex;
+  align-items: flex-end;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.outer-box-2 .box-2 {
+  width: 50%;
+  background-image: url(img/fe-4.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 95%;
+  margin: 10px;
+  display: flex;
+  align-items: flex-end;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.diff-box {
+  background-color: rgb(238, 255, 0);
+
+  text-align: center;
+  border-radius: 3px;
+  padding: 10px;
+}
+
+.diff-box h3 {
+  color: aqua;
+  margin: 10px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.diff-box button {
+  background-color: rgb(0, 0, 0);
+  border-radius: 3px;
+  padding: 3px;
+}
+
+.diff-box a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.outer-box-2 button {
+  background-color: rgb(0, 0, 0);
+
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.outer-box-2 a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+@media (min-width: 770px) {
+  .container {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo {
+    order: 1;
+    height: 80%;
+    width: 70%;
+  }
+
+  .logo .box-1 {
+    width: 90%;
+    height: 100%;
+  }
+  .logo .box-1 img {
+    position: absolute;
+    width: 70%;
+    height: 100%;
+  }
+
+  .logo .box-1 h1 {
+    font-size: 30px;
+    margin-left: 180px;
+  }
+
+  .logo .box-1 h2 {
+    font-size: 40px;
+    margin-left: 200px;
+  }
+
+  .outer-box-1 {
+    order: 0;
+    flex-direction: column;
+    width: 30%;
+    height: 100%;
+    display: flex;
+  }
+
+  .outer-box-1 .box-1 {
+    width: 100%;
+    height: 70%;
+  }
+
+  .outer-box-1 .box-2 {
+    width: 100%;
+    height: 30%;
+  }
+
+  .outer-box-2 .box-1 {
+    width: 100%;
+    height: 30%;
+  }
+
+  .outer-box-2 .box-2 {
+    width: 100%;
+  }
+
+  .outer-box-2 {
+    order: 2;
+    flex-direction: column;
+    width: 30%;
+    height: 100%;
+  }
+
+  .outer-box-2 button {
+    width: 100%;
+    height: 10%;
+    font-size: 20px;
+  }
+
+  .diff-box {
+    background-color: rgb(238, 255, 0);
+    text-align: center;
+    border-radius: 3px;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .diff-box h3 {
+    font-size: 30px;
+  }
+
+  .diff-box button {
+    font-size: 20px;
+    padding: 10px;
+    width: 80%;
+  }
+}

@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  width: 100vw;
+  height: 100%;
+  background-color: #ff3cac;
+  background-image: linear-gradient(
+    to top,
+    #3b41c5 0%,
+    #a981bb 49%,
+    #ffc8a9 100%
+  );
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+nav {
+  width: 100%;
+  background-color: #04abff;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: rgb(251, 255, 0);
+  padding: 10px;
+}
+
+main {
+  width: 100%;
+  height: 90%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+main .btn {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+main .btn button {
+  margin: 10px;
+  width: 30%;
+  height: 30%;
+  padding: 5px;
+  background-color: black;
+}
+
+main .btn button a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main .outer-box {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 217, 255, 0.342);
+  border-radius: 20px;
+  width: 100%;
+  height: 30%;
+  margin-top: 30px;
+  padding: 10px;
+  color: white;
+}
+
+main .outer-box .logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 50%;
+  height: 100%;
+  margin: 30px;
+}
+
+main .outer-box .logo img {
+  order: 1;
+  width: 100%;
+  height: 100%;
+  margin: 20px;
+
+}
+
+main .outer-box .logo h3 {
+  width: 100%;
+  height: 100%;
+  font-size: 30px;
+}
+main .outer-box .side-logo h4 {
+  order: 2;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  height: 10%;
+  font-size: 10px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+main .box-container {
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  display: flex;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+main .box {
+  width: 100%;
+  height: 100%;
+  margin: 20px;
+
+}
+
+main .box iframe {
+  width: 300px;
+  height: 100%;
+  margin: 10px;
+}
+
+main p {
+  font-size: 13px;
+  color: black;
+  font-weight: bold;
+}
+
+main .box img {
+  height: 100px;
+  width: 200px;
+}
+
+@media (min-width: 770px) {
+  main .outer-box {
+    flex-direction: row;
+  }
+
+  main .box-container {
+    width: 100%;
+    height: 100%;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  main .box {
+    margin-left: 100px;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+  }
+
+  main .box iframe {
+    width: 300px;
+    height: 200px;
+    margin-left: 200px;
+  }
+
+ main .box img{
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  overflow-y: scroll;
+ }
+
+main .outer-box p{
+  margin-left: 10px;
+}
+
+main .outer-box .logo{
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+}
+
+main .outer-box .logo img{
+  margin: 10px;
+  
+}
+
+}
